@@ -99,17 +99,17 @@ i.fa-microphone {
 }
 
 main button {
-    margin-right: 0.5rem;
-    padding: 0.8rem 1rem;
-    border: 1px solid transparent;;
-    border-radius: 6px;
-    background: #f5f5f5;
-    font-size: 1rem;
-    cursor: pointer;
+  margin-right: 0.5rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: #f5f5f5;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-main button:hover{
-    border:1px solid #c4c4c4;
+main button:hover {
+  border: 1px solid #c4c4c4;
 }
 
 main .languages {
@@ -140,6 +140,7 @@ footer > div {
 
 footer .bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-top: 1px solid #e0dede;
 }
@@ -160,4 +161,51 @@ footer .bottom li {
 
 footer .bottom li a {
   color: #6e6d6d;
+}
+@media (max-width: 975px) {
+  footer .bottom p {
+    order: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  footer .bottom ul:first-child {
+    order: 1;
+  }
+  footer .bottom ul:last-child {
+    order: 2;
+  }
+
+  @media (max-width: 414px) {
+    main{
+        padding-top: 2rem;
+    }
+    main img {
+      width: 200px;
+    }
+
+
+    i.fa-microphone{
+        color: #`c4c4c4;
+    }
+    main .buttons {
+      display: none;
+    }
+
+    main .languages {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  footer .bottom p,
+  footer .bottom ul:first-child {
+    display: none;
+  }
+
+  footer .bottom ul:last-child {
+    width: unset;
+    margin: 0 auto;
+  }
 }
