@@ -145,12 +145,20 @@ footer .bottom {
   border-top: 1px solid #e0dede;
 }
 
+footer .bottom a {
+  color: #6e6d6d;
+}
+
 footer .bottom ul {
   display: flex;
+}
+
+footer .bottom .box-1,
+footer .bottom .box-3{
   min-width: 30%;
 }
 
-footer .bottom ul:last-child {
+footer .bottom .box-3 ul {
   justify-content: flex-end;
 }
 
@@ -159,20 +167,17 @@ footer .bottom li {
   margin-right: 2rem;
 }
 
-footer .bottom li a {
-  color: #6e6d6d;
-}
 @media (max-width: 975px) {
-  footer .bottom p {
+  footer .bottom .box-2 {
     order: 0;
     width: 100%;
     text-align: center;
     padding-bottom: 2rem;
   }
-  footer .bottom ul:first-child {
+  footer .bottom .box-1 {
     order: 1;
   }
-  footer .bottom ul:last-child {
+  footer .bottom .box-3 {
     order: 2;
   }
 
@@ -186,7 +191,7 @@ footer .bottom li a {
 
 
     i.fa-microphone{
-        color: #`c4c4c4;
+        color: #c4c4c4;
     }
     main .buttons {
       display: none;
@@ -199,12 +204,12 @@ footer .bottom li a {
     }
   }
 
-  footer .bottom p,
-  footer .bottom ul:first-child {
+  footer .bottom .box-2,
+  footer .bottom .box-1 {
     display: none;
   }
 
-  footer .bottom ul:last-child {
+  footer .bottom .box-3 {
     width: unset;
     margin: 0 auto;
   }
