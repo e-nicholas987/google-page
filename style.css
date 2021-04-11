@@ -28,9 +28,11 @@ nav .links {
   gap: 1rem;
   padding: 1rem;
 }
+
 nav .links a {
   color: rgb(61, 60, 60);
 }
+
 nav .links img {
   width: 17px;
   margin: 0 1rem;
@@ -57,6 +59,7 @@ main {
   gap: 2rem;
   padding: 0 1.5rem;
 }
+
 main img {
   width: 330px;
 }
@@ -65,6 +68,7 @@ main .search {
   width: 100%;
   position: relative;
 }
+
 main input {
   width: 100%;
   border: 1px solid #c4c4c4;
@@ -111,9 +115,11 @@ main button:hover{
 main .languages {
   display: flex;
 }
+
 main .languages ul {
   display: flex;
 }
+
 main .languages li {
   list-style: none;
   margin: 0 0.5rem;
@@ -137,17 +143,21 @@ footer .bottom {
   justify-content: space-between;
   border-top: 1px solid #e0dede;
 }
+
 footer .bottom ul {
   display: flex;
   min-width: 30%;
 }
+
 footer .bottom ul:last-child {
   justify-content: flex-end;
 }
+
 footer .bottom li {
   list-style: none;
   margin-right: 2rem;
 }
+
 footer .bottom li a {
   color: #6e6d6d;
 }
