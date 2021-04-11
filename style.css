@@ -71,13 +71,13 @@ main .search {
 
 main input {
   width: 100%;
-  border: 1px solid #c4c4c4;
+  border: 1px solid #d9dadb;
   padding: 1rem;
   border-radius: 30px;
 }
 main input:hover,
 main input:focus {
-  box-shadow: 0px 1px 5px 2px #c4c4c4;
+  box-shadow: 0px 1px 5px 2px #e3e3e3;
   border: 1px solid #fff;
   outline: none;
 }
@@ -95,7 +95,7 @@ i.fa-microphone {
   top: 1rem;
   right: 1.2rem;
   font-size: 1rem;
-  color: #c4c4c4;
+  color: blue;
 }
 
 main button {
